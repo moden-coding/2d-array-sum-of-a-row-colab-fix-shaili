@@ -9,7 +9,11 @@ public class App {
 		System.out.println(sumRow(a,0)); //should print 17
 	}
 	public static int sumRow(int[][] array, int row){
-		return -1;
+		int sum = 0;
+		for(int col=0; col<array[row].length; col++){
+			sum += array[row][col];
+		}
+		return sum;
 	}
 	
 }
